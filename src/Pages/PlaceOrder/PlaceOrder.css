@@ -2,11 +2,11 @@
     display:flex;
     justify-content: space-between;
     align-items: start;
-    margin:50px 100px 0px 100px;
+    margin:50px 100px 0px 40px;
     gap:10px;
 }
 .place-order-title{
-    margin:50px 0px 0px 100px;
+    margin:-70px 0px 0px 40px;
     font-size: max(3vw,2px);
     font-weight: 500;
 }
@@ -18,6 +18,7 @@
 }
 .place-order-info{
     align-items: start;
+    margin-top: -40px;
 }
 .place-order-info input{
     padding:10px;
@@ -32,13 +33,20 @@
 }
 @media(max-width:750px){
     .place-order{
+        margin-top: 60px;
+    }
+
+    .place-order-title{
+        margin-top: -120px;
+    }
+    .place-order{
         display: flex;
         flex-direction: column;
         gap:120px;
         align-items: start;
     }
     .place-order-info{
-        width:100%;
+        width:110%;
 
     }
     .place-order-title{
@@ -48,14 +56,65 @@
         padding: 15px;
     }
     .place-order-right{
-        width: 100%;
+        width: 120%;
         margin-left: -30px;
         font-size: max(2vw,5px);
     }
+    .cart-total-details{
+        font-size: 15px;
+ 
+     }
 }
+
+@media(min-width:480px) and (max-width:540px){
+   
+    .place-order-title{
+        margin-top: -160px;
+    }
+}
+@media(min-width:380px) and (max-width:480px){
+    
+    .place-order-title{
+        margin-top: -200px;
+    }
+
+    .place-order-right{
+        width: 120%;
+    }
+}
+
+@media(min-width:330px) and (max-width:380px){
+    
+    .place-order-title{
+        margin-top: -260px;
+    }
+    .place-order-right{
+        width: 120%;
+    }
+    .cart-total-details{
+       font-size: 10px;
+
+    }
+}
+@media(min-width:290px) and (max-width:330px){
+    .place-order-title{
+        margin-top: -270px;
+    }
+    .cart-total-details{
+        font-size: 15px;
+ 
+     }
+
+     .cart-total{
+        font-size: 15px;
+     }
+}
+
+
 @media(max-width:450px){
     .place-order-right button{
         width:80%;
         font-size: 10px;
     }
+
 }
