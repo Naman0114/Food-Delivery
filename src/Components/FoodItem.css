@@ -5,6 +5,8 @@
     box-shadow: 0px 0px 10px #00000015;
     transition: 0.3s;
     animation: fadeIn 2s ;
+    margin-left:-30px;
+    margin-right:-40px;
 }
 .f-i-img{
     width:100%;

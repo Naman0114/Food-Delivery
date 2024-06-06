@@ -9,7 +9,7 @@
 
 .pic1 {
     width: 150px;
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 .list {
@@ -59,7 +59,7 @@
     border: 1px solid orange;
     cursor: pointer;
     transition: 0.3s;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .btn1:hover {
