@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { assets } from '../assets/Image/assets/assets';
 import './Footer.css';
 const Footer=()=>{
@@ -16,10 +17,10 @@ const Footer=()=>{
             <div className="f-c-center">
                 <h2>COMPANY</h2>
                 <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Delivery</li>
-                    <li>Privacy Policy</li>
+                   <li><Link to="/">Home</Link></li>
+                   <li><Link to='#about'>About us</Link></li>
+                   <li><Link to='/order'>Delivery</Link></li>
+                  <li><Link>Privacy Policy</Link></li>
                 </ul>
 
             </div>
