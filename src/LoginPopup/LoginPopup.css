@@ -1,0 +1,76 @@
+.Login-popUp{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+
+}
+.l-p-container{
+    place-self:center;
+    width: max(23vw,330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+}
+.l-p-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.l-p-title img{
+    width: 12px;
+    cursor: pointer;
+}
+.l-p-inputs{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.l-p-inputs .input-name{
+    margin-bottom: 15px;
+}
+.l-p-inputs input{
+    padding: 12px;
+    outline: none;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+}
+
+
+
+.l-p-container button{
+    padding: 10px;
+    font-size: 16px;
+    background-color:orange;
+    border:none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+.l-p-condition{
+    display: flex;
+    align-items: start;
+    gap:10px;
+    margin-top: -5px;
+}
+.l-p-condition input{
+    margin-top: 2px;
+
+}
+.l-p-container span{
+    font-size: 16px;
+    color:orange;
+    cursor: pointer;
+    font-weight: 500px;
+}

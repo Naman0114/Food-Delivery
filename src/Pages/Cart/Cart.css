@@ -1,0 +1,112 @@
+.cart{
+    margin: 100px;
+}
+.cart-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color:grey;
+    font-size: max(1vw,12px);
+}
+.cart-items-description{
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color:grey;
+    font-size: max(1vw,12px);
+}
+.cart-items-description img{
+    width: 70px;
+
+}
+.cart-items-description .remove{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cart-items-description hr{
+    height: 1px;
+    border-color: #e2e2e2;
+    border: none;
+}
+.cart-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    grid:max(12vw,20px);
+}
+.cart-total{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color:#555;
+}
+.cart-total hr{
+    margin: 10px 0px;
+}
+.cart-total button{
+    width: max(15vw,200px);
+    color: white;
+    border:none;
+    background-color: orange;
+    cursor: pointer;
+    padding: 10px 0px;
+    border-radius: 4px;
+}
+.cart-promo-code{
+    margin-left: 60px;
+    flex:1;
+}
+.cart-promo-code p{
+    color: #555;
+}
+.c-p-c-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+.c-p-c-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.c-p-c-input button{
+    width: max(10vw,50px);
+    padding: 8px 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media(max-width:750px){
+    .cart-bottom{
+        flex-direction: column-reverse;
+        gap:20px;
+        
+    }
+    .cart-total{
+        margin-left: -15px;
+    }
+    .cart-promo-code{
+        margin-left: -20px;
+    }
+
+}
+@media (max-width:640px){
+    .cart-items-description img{
+        width: 30px;
+    
+    }
+    
+}
