@@ -4,13 +4,8 @@
     font-weight: 500;
 }
 
-.menu-text h1 {
-    padding: 20px;
-
-}
-
 .menu-text p {
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0px 20px 0px;
 }
 
 .menu-list {
