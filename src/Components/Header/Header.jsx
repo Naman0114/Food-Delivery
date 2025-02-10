@@ -1,4 +1,4 @@
-import { assets } from '.././assets/Image/assets/assets';
+import { assets } from '../../assets/Image/assets/assets';
 import './Header.css';
 const Header=()=>{
     return <>

@@ -24,12 +24,12 @@
     font-weight: 500;
     color:white;
     font-size:max(3.5vw,20px);
-    margin:-230px 0px 0px 50px;
+    margin:-240px 0px 0px 30px;
 }
 .h-contents p{
     color:white;
-    font-size: 1vw;
-    margin-left:50px;
+    font-size: 1.5vw;
+    margin-left:30px;
 
 }
 .h-contents button{
@@ -40,7 +40,7 @@
     border-radius:25px;
     background-color:orange;
     font-size: max(1vw,13px);
-    margin:20px 0px 0px 40px;
+    margin:45px 0px 0px 25px;
 }
 .h-contents button:hover{
     background-color:orange;
@@ -138,7 +138,7 @@
 }
 @media (max-width:800px){
     .h-contents img{
-        width: 650px;
+        width: 720px;
         height: 360px;
     }
 
@@ -163,7 +163,7 @@
 
     }
     .header-heading{
-        margin-top: -200px;
+        margin: -180px 0px 0px 20px;
     }
 }
 @media (max-width:720px) {
@@ -174,8 +174,10 @@
        
     @media (max-width:700px) {
         .h-contents img{
-            width: 560px;
-            
+            width: 560px;            
+        }
+        .header-heading{
+            margin: -200px 0px 0px 20px;
         }
     }    
 
@@ -184,6 +186,7 @@
             width: 540px;
             
         }
+        
     }    
     @media (max-width:640px) {
         .h-contents img{
@@ -254,7 +257,8 @@
 
     @media (min-width:330px) and (max-width:395px) {
         .h-contents img{
-            width: 280px;
+            width: 300px;
+            
             
         }
     }   

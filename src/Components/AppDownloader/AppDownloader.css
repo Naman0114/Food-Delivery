@@ -19,4 +19,6 @@
 .app-download-platforms img:hover{
     transform:scale(1.05);
 }
-
+.app-download-content p{
+    font-size: max(2vw,20px);
+}
