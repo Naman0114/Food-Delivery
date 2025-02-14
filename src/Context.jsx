@@ -10,7 +10,7 @@ export const FoodContext = createContext({
 
 const ContextAPI = ({ children }) => {
     const [cartItems, SetCartItems] = useState({});
-    const url="http://localhost:5000";
+    const url="https://food-backend-1-oxvc.onrender.com";
     const [token,setToken]=useState("");
     
     const[food_list,setFoodList]=useState([]);
