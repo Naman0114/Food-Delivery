@@ -20,9 +20,9 @@ const Cart = () => {
                 <hr />
             </div>
             {food_list.map((item, index) => {
-                if (cartItems?.[item._id] > 0)
+                if (item && cartItems?.[item._id] > 0)
                     return <>
-                        <div>
+                        <div key={item._id}>
                             <div className="cart-items-description">
                                 <img src={url+"/images/"+item.image} alt="" />
                                 <p>{item.name}</p>
