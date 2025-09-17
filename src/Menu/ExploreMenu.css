@@ -4,6 +4,10 @@
     font-weight: 500;
 }
 
+.menu-text h1{
+    margin-top:80px;
+}
+
 .menu-text p {
     padding: 20px 0px 20px 0px;
 }

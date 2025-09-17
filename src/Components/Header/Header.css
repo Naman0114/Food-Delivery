@@ -24,7 +24,7 @@
     font-weight: 500;
     color:white;
     font-size:max(3.5vw,20px);
-    margin:-240px 0px 0px 30px;
+    margin:-270px 0px 0px 30px;
 }
 .h-contents p{
     color:white;
@@ -174,12 +174,12 @@
        
     @media (max-width:700px) {
         .h-contents img{
-            width: 560px;            
+            width: 560px;
         }
         .header-heading{
             margin: -200px 0px 0px 20px;
         }
-    }    
+    }
 
     @media (max-width:670px) {
         .h-contents img{

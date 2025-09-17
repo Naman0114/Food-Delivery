@@ -7,7 +7,9 @@ import './LoginPopup.css';
 const LoginPopup=({setShowLogin})=>{
 
     const {url,setToken}=useContext (FoodContext );
+    
     const [currState,setCurrState]=useState("Login");
+
     const [data,setData]=useState({
         name:"",
         email:"",
@@ -15,7 +17,6 @@ const LoginPopup=({setShowLogin})=>{
     });
 
     const onChangeHandler=(event)=>{
-
         const name=event.target.name;
         const value=event.target.value;
         setData(data=>({...data,[name]:value}))

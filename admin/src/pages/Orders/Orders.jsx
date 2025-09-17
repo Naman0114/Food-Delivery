@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { toast } from "react-toastify";
 import { assets } from '../../../../src/assets/Image/assets/assets';
 import './Orders.css';
@@ -48,7 +48,7 @@ const Orders=({url})=>{
                         <p>{order.address.city+", "+order.address.state+", "+order.address.country+", "+order.address.zipcode+", "}</p>
                     </div>
                     <p className='order-item-phone'>{order.address.phone}</p>
-                </div>                
+                </div>
             })}
         </div>
 

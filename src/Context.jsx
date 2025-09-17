@@ -10,7 +10,7 @@ export const FoodContext = createContext({
 
 const ContextAPI = ({ children }) => {
     const [cartItems, SetCartItems] = useState({});
-    const url="http://localhost:5000";
+    const url="https://food-backend-1-oxvc.onrender.com";
     const [token,setToken]=useState("");
     
     const[food_list,setFoodList]=useState([]);
@@ -41,7 +41,12 @@ const ContextAPI = ({ children }) => {
         for (const item in cartItems) {
             if (cartItems[item] > 0) {
                 let itemInfo = food_list.find((pro) => pro._id === item);
-                totalAmount += itemInfo.price * cartItems[item];
+                
+                if (itemInfo) {
+                    totalAmount += itemInfo.price * cartItems[item];
+                } else {
+                    console.warn(`Item with ID ${item} not found in food_list`);
+                }
             
             }
         }
